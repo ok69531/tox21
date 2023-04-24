@@ -29,7 +29,7 @@ criterion = nn.BCEWithLogitsLoss(reduction = "none")
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu') 
 
-args.task_name = 'NR-Aromatase'
+args.task_name = 'SR-p53'
 
 if args.task_name == 'all':
     num_task = 12
@@ -115,8 +115,8 @@ for epoch in range(1, args.epochs + 1):
     1. NR-AR
     seed = 0
     best epoch = 1
-    best validation auc = 0.8407858665854402
-    test auc = 0.6647334016918738
+    best validation auc = 0.8411209259823332
+    test auc = 0.6648936170212766
     
     2. NR-AR-LBD
     seed = 0
@@ -138,49 +138,49 @@ for epoch in range(1, args.epochs + 1):
     
     5. NR-ER
     seed = 0
-    best epoch = 
-    best validation auc = 
-    test auc = 
+    best epoch = 33
+    best validation auc = 0.8017420862545146
+    test auc = 0.7448578669233641
     
     6. NR-ER-LBD
     seed = 0
-    best epoch = 
-    best validation auc = 
-    test auc = 
+    best epoch = 38
+    best validation auc = 0.8355738000721761
+    test auc = 0.7950246710526315
     
     7. NR-PPAR-gamma
     seed = 0
-    best epoch = 
-    best validation auc = 
-    test auc = 
+    best epoch = 99
+    best validation auc = 0.678562421185372
+    test auc = 0.8484908395940424
     
     8. SR-ARE
     seed = 0
-    best epoch = 
-    best validation auc = 
-    test auc = 
+    best epoch = 48
+    best validation auc = 0.7348906192065259
+    test auc = 0.7874174890881335
     
     9. SR-ATAD5
     seed = 0
-    best epoch = 
-    best validation auc = 
-    test auc = 
+    best epoch = 18
+    best validation auc = 0.8245982810164424
+    test auc = 0.7582159624413145
     
     10. SR-HSE
     seed = 0
-    best epoch = 
-    best validation auc = 
-    test auc = 
+    best epoch = 21
+    best validation auc = 0.7519230769230769
+    test auc = 0.7943384422896467
     
     11. SR-MMP
     seed = 0
-    best epoch = 
-    best validation auc = 
-    test auc = 
+    best epoch = 98
+    best validation auc = 0.8338261230418093
+    test auc = 0.8844882516925527
     
     12. SR-p53
     seed = 0
-    best epoch = 
-    best validation auc = 
-    test auc = 
+    best epoch = 100
+    best validation auc = 0.8119571511291257
+    test auc = 0.7659420108573287
 '''
